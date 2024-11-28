@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Blackfox Admin</title>
+</head>
+<body id="body">
+    <section id="main-con">
+        <section id="top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" id="btnMenu">
+            </div>
+            
+            <section class="slidbar">
+        
+                <ul>
+                    <li>
+                        <a href="admin-panel.html" class="active">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="nav-item">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            <i class="bx bxs-shopping-bag"></i>
+                            <span class="nav-item">Products</span>
+                        </a>
+                        <span class="tooltip">Products</span>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            <i class="bx bx-list-check"></i>
+                            <span class="nav-item">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <i class="bx bxs-store"></i>
+                            <span class="nav-item">Shop</span>
+                        </a>
+                        <span class="tooltip">Shop</span>
+                    </li>
+                    <li>
+                        <a href="Advertisement.html">
+                            <i class="bx bx-body"></i>
+                            <span class="nav-item">Advertisement</span>
+                        </a>
+                        <span class="tooltip">Advertisement</span>
+                    </li>
+                    <li>
+                        <a href="video.html">
+                            <i class="bx bx-video"></i>
+                            <span class="nav-item">Videos</span>
+                        </a>
+                        <span class="tooltip">Videos</span>
+                    </li>
+                    <li>
+                        <a href="coupon.html" id="coupon">
+                            <i class="bx bx-moon"></i>
+                            <span class="nav-item">Offers</span>
+                        </a>
+                        <span class="tooltip">Offers</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    <section id="side">
+        <section id="head">
+           
+            <div class="serch">
+              <i id="ser" class="bx bx-search"></i>
+              <input id="inser" type="text" placeholder="Search Product">
+            </div>
+            <div class="icon">
+                <i class="bx bx-notification"></i>
+            </div>
+          
+         </section>
+         <section id="main-body">
+            <section class="body-one">
+                <h1>Overview Dashboard</h1>
+                <div class="d1">
+                   
+                     <img src="image/calender.png" alt="">  
+                     <a id="date"></a>
+                </div>
+    
+            </section>
+            <section id="body-two">
+                <section class="a1" id="order">
+                    <h1>Orders</h1>
+                    <h2 id="ocount">00</h2>
+                    <div class="loader-con">
+                        <i id="in-icon" class='fa fa-first-order'></i> 
+                    </div>
+                    <h3>Completed</h3>
+                    <h4 id="complete">0</h4>
+                </section>
+                <section class="a1" id="payment">
+                    <h1>Total Payment</h1>
+                    <h2 id="uvisitor">00</h2>
+                    <div class="loader-con1">
+                        <i id="in-icon" class='fa fa-paypal'></i> 
+                    </div>
+                    <h3>Number Of Payments</h3>
+                    <h4 id="nop">00</h4>
+                </section>
+                <section class="a1" id="sell">
+                    <h1>Sells</h1>
+                    <h2 id="sel">00</h2>
+                    <div class="loader-con2">
+                        <i id="in-icon" class='bx bxs-bulb'></i> 
+                    </div>
+                    <h3>Number Of Sells Product</h3>
+                    <h4 id="nos">0</h4>
+                </section>
+                <section class="a1">
+                    <h1>Profit</h1>
+                    <h2 id="profit">0</h2>
+                    <div class="loader-con3">
+                        <i id="in-icon" class='	fa fa-dollar'></i> 
+                    </div>
+                    <h3>Profit Margin</h3>
+                    <h4 id="margin">0%</h4>
+                </section>
+
+
+            </section>
+            <section id="chart1">
+                <section id="in-chart1">
+                  <section id="min-chart1">
+                    <canvas id="myChart1" width="400" height="400"></canvas>
+                  </section>
+                  <section id="min-chart2">
+                    <canvas id="myChart2" width="400" height="400"></canvas>
+                  </section>
+                </section>
+                <section id="in-chart2">
+                    <canvas id="myChart" width="800" height="400"></canvas>
+                </section>
+            </section>
+           
+            
+           
+         </section>
+    </section>
+    
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/src/admin.js"></script>
+    <script src="src/date.js"></script>
+    <script type="module" src="src/chart.js"></script>
+    <script type="module" src="src/homecount.js"></script>
+  
+</body>
+</html>

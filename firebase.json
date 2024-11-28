@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/admin-panel.html"
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5500
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": false
+  }
+}

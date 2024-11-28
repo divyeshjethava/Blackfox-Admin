@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Blackfox Admin</title>
+</head>
+<body id="body">
+    <section id="main-con">
+        <section id="top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" id="btnMenu">
+            </div>
+            
+            <section class="slidbar">
+        
+                <ul>
+                    <li>
+                        <a href="admin-panel.html">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="nav-item">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            <i class="bx bxs-shopping-bag"></i>
+                            <span class="nav-item">Products</span>
+                        </a>
+                        <span class="tooltip">Products</span>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            <i class="bx bx-list-check"></i>
+                            <span class="nav-item">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <i class="bx bxs-store"></i>
+                            <span class="nav-item">Shop</span>
+                        </a>
+                        <span class="tooltip">Shop</span>
+                    </li>
+                    <li>
+                        <a href="Advertisement.html" class="active">
+                            <i class="bx bx-body"></i>
+                            <span class="nav-item">Advertisement</span>
+                        </a>
+                        <span class="tooltip">Advertisement</span>
+                    </li>
+                    <li>
+                        <a href="video.html">
+                            <i class="bx bx-video"></i>
+                            <span class="nav-item">Videos</span>
+                        </a>
+                        <span class="tooltip">Videos</span>
+                    </li>
+                    <li>
+                        <a href="coupon.html" id="coupon">
+                            <i class="bx bx-moon"></i>
+                            <span class="nav-item">Offers</span>
+                        </a>
+                        <span class="tooltip">Offers</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    <section id="side">
+        <section id="head">
+           
+            <div class="serch">
+              <i id="ser" class="bx bx-search"></i>
+              <input id="inser" type="text" placeholder="Search Product">
+            </div>
+            <div class="icon">
+                <i class="bx bx-notification"></i>
+            </div>
+          
+         </section>
+         <section id="main-body">
+            <h1 id="adlabel">Advertisement</h1>
+         <section class="b1">
+            <label>Product Id</label>
+            <input type="text" placeholder="Enter The Id" id="adid">
+            <label>Product Title</label>
+            <input type="text" placeholder="Enter The Title" id="adtitle">
+            <label>Product Discount</label>
+            <input type="text" placeholder="Enter The Discount" id="addic">
+            <label>Product Description</label>
+            <textarea type="text" placeholder="Enter The Ad Description"  id="adecrip"></textarea>
+            <input type="file" name="adimg" id="adimg">
+            <button id="adbutton">Add</button>
+         </section>  
+         
+           
+         </section>
+    </section>
+    
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/src/admin.js"></script>
+    <script type="module" src="src/advertised.js"></script>
+  
+</body>
+</html>

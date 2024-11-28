@@ -1,0 +1,166 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js"></script>
+    <title>Blackfox Admin</title>
+</head>
+<body id="body">
+    <section id="main-con">
+        <section id="top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" id="btnMenu">
+            </div>
+            
+            <section class="slidbar">
+        
+                <ul>
+                    <li>
+                        <a href="admin-panel.html">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="nav-item">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            <i class="bx bxs-shopping-bag"></i>
+                            <span class="nav-item">Products</span>
+                        </a>
+                        <span class="tooltip">Products</span>
+                    </li>
+                    <li>
+                        <a href="category.html" class="active">
+                            <i class="bx bx-list-check"></i>
+                            <span class="nav-item">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <i class="bx bxs-store"></i>
+                            <span class="nav-item">Shop</span>
+                        </a>
+                        <span class="tooltip">Shop</span>
+                    </li>
+                    <li>
+                        <a href="Advertisement.html">
+                            <i class="bx bx-body"></i>
+                            <span class="nav-item">Advertisement</span>
+                        </a>
+                        <span class="tooltip">Advertisement</span>
+                    </li>
+                    <li>
+                        <a href="video.html">
+                            <i class="bx bx-video"></i>
+                            <span class="nav-item">Videos</span>
+                        </a>
+                        <span class="tooltip">Videos</span>
+                    </li>
+                    <li>
+                        <a href="coupon.html" id="coupon">
+                            <i class="bx bx-moon"></i>
+                            <span class="nav-item">Offers</span>
+                        </a>
+                        <span class="tooltip">Offers</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    <section id="side">
+        <section id="head">
+            <div class="serch">
+              <i id="ser" class="bx bx-search"></i>
+              <input id="inser" type="text" placeholder="Search Product">
+            </div>
+            <div class="icon">
+                <i class="bx bx-notification"></i>
+            </div>
+          
+         </section>
+    <h4 class="ad">Add Categories</h4>
+    <section id="crd">
+      <section id="c1">
+        
+         <section class="cat1">
+            <label>Categories Id</label>
+            <input required type="number" placeholder="Enter the category id" id="cid">
+            <label>Categories Name</label>
+            <select  class="sel" id="cn">
+               <option value="1">select a Categories</option>
+                <option>WOMEN</option>
+                <option>MEN</option>
+                <option>BOYS</option>
+                <option>GIRLS</option>
+            </select>
+            <label>Sub-Categories Name</label>
+            <select  class="sel" id="sn">
+                <option value="1">select a Categories</option>
+
+            </select>
+            <div class="div-i">
+                <div class="c-im" id="catback">
+                    <i class="bx bx-images"></i>
+                              
+                    <input required type="file" id="cat-img" name="cat-img" accept="image/jpg/png/jpeg" hidden>
+                    <label for="cat-img" class="ilab">Click to Upload category Image</label>
+    
+                </div>
+               <img src="/image/girl/g.jpg" id="c-image">
+
+            </div>
+            <label id="pro">Please Wait For Upload Image<span>....</span></label>
+            <label>Categories Background</label>
+            <input required type="text" placeholder="Enter the category background" id="cback" oninput="adbackground()">
+          
+            <div class="div-i">
+                <div class="c-im" id="subback">
+                    <i class="bx bx-images"></i>
+                              
+                    <input required type="file" id="scat-img" name="scat-img" accept="image/jpg/png/jpeg" hidden >
+                    <label for="scat-img" class="ilab">Click to Upload Sub-category Image</label>
+    
+                </div>
+               <img src="/image/girl/g.jpg" id="s-image">
+
+            </div>
+            <label id="pro1">Please Wait For Upload Image<span>....</span></label>
+        
+            <div class="bt">
+                <button id="add">Add</button>
+            <button>cancel</button>
+            </div>
+            
+         </section>
+         
+               
+               
+        </section>
+
+    </section>
+      
+     
+        
+            
+           
+     
+    </section>
+    
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+
+<script src="/src/dynamic.js"></script>
+<script src="/src/admin.js"></script>
+<script type="module" src="/src/cat.js"></script>
+
+
+
+  
+</body>
+</html>

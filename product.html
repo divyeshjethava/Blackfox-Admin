@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    
+    <title>Blackfox Admin</title>
+</head>
+<body id="body">
+    <section id="main-con">
+        <section id="top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" id="btnMenu">
+            </div>
+            
+            <section class="slidbar">
+        
+                <ul>
+                    <li>
+                        <a href="admin-panel.html">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="nav-item">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="product.html" class="active">
+                            <i class="bx bxs-shopping-bag"></i>
+                            <span class="nav-item">Products</span>
+                        </a>
+                        <span class="tooltip">Products</span>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            <i class="bx bx-list-check"></i>
+                            <span class="nav-item">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <i class="bx bxs-store"></i>
+                            <span class="nav-item">Shop</span>
+                        </a>
+                        <span class="tooltip">Shop</span>
+                    </li>
+                    <li>
+                        <a href="Advertisement.html">
+                            <i class="bx bx-body"></i>
+                            <span class="nav-item">Advertisement</span>
+                        </a>
+                        <span class="tooltip">Advertisement</span>
+                    </li>
+                    <li>
+                        <a href="video.html">
+                            <i class="bx bx-video"></i>
+                            <span class="nav-item">Videos</span>
+                        </a>
+                        <span class="tooltip">Videos</span>
+                    </li>
+                    <li>
+                        <a href="coupon.html" id="coupon">
+                            <i class="bx bx-moon"></i>
+                            <span class="nav-item">Offers</span>
+                        </a>
+                        <span class="tooltip">Offers</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    <section id="side">
+        <section id="head">
+            
+            <div class="serch">
+              <i id="ser" class="bx bx-search"></i>
+              <input id="inser" type="text" placeholder="Search Product">
+            </div>
+            <div class="icon">
+                <i class="bx bx-notification"></i>
+            </div>
+          
+         </section>
+         <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="close">&times;</span>
+              <div id="pd">
+                  <img id="alertimg">
+                  <div>
+                    <span id="apname"></span>
+                    <span id="apri"></span>
+                    <span id="aqty"></span>
+                    <span id="acat"></span>
+                  </div>
+                  <span id="apname"></span>
+              </div>
+            
+              <p>Are you sure you want to delete this product?</p>
+              <button id="confirm">Confirm</button>
+              <button id="cancel">Cancel</button>
+            </div>
+          </div>
+           <div id="Product_card">
+               <div class="line">
+                <h4>Products</h4>
+                <a href="add.html" class="newp">Add New</a>
+               </div>
+               <div class="t">
+                <table class="table table-striped">
+                    <tr id="thred">
+                        <th class="th">Sr. No</th>
+                        <th class="th01">Product Name</th>
+                        <th class="th1">Cover Photo</th>
+                        <th class="th2">Photos</th>
+                        <th class="th3">Price</th>
+                        <th class="th4">Quantity</th>
+                      
+                        <th class="th6">Category</th>
+                        <th class="th7">Colors</th>
+                        <th class="th8">Sizes</th>
+                        <th class="th9">Status</th>
+                        <th class="th10">Action</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                   
+                </table>
+                <h1 id="collection">Black & White Collection</h1>
+                <table class="table table-striped">
+                  
+                    <tbody id="tbody1">
+                        
+                    </tbody>
+                   
+               </div>
+
+    
+           </div>
+           
+            
+           
+     
+    </section>
+    
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/src/admin.js"></script>
+    <script type="module" src="/src/setdata.js"></script>
+    <script type="module" src="/src/getdata.js"></script>
+
+  
+</body>
+</html>

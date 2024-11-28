@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    <title>Blackfox Admin</title>
+</head>
+<body id="body">
+    <section id="main-con">
+        <section id="top">
+            <div class="logo">
+                <img src="image/logo.png" alt="" id="btnMenu">
+            </div>
+            
+            <section class="slidbar">
+        
+                <ul>
+                    <li>
+                        <a href="admin-panel.html">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="nav-item">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="product.html" class="active">
+                            <i class="bx bxs-shopping-bag"></i>
+                            <span class="nav-item">Products</span>
+                        </a>
+                        <span class="tooltip">Products</span>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            <i class="bx bx-list-check"></i>
+                            <span class="nav-item">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">
+                            <i class="bx bxs-store"></i>
+                            <span class="nav-item">Shop</span>
+                        </a>
+                        <span class="tooltip">Shop</span>
+                    </li>
+                    <li>
+                        <a href="Advertisement.html">
+                            <i class="bx bx-body"></i>
+                            <span class="nav-item">Advertisement</span>
+                        </a>
+                        <span class="tooltip">Advertisement</span>
+                    </li>
+                    <li>
+                        <a href="video.html">
+                            <i class="bx bx-video"></i>
+                            <span class="nav-item">Videos</span>
+                        </a>
+                        <span class="tooltip">Videos</span>
+                    </li>
+                    <li>
+                        <a href="coupon.html" id="coupon">
+                            <i class="bx bx-moon"></i>
+                            <span class="nav-item">Offers</span>
+                        </a>
+                        <span class="tooltip">Offers</span>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    <section id="side">
+        <section id="head">
+            
+            <div class="serch">
+              <i id="ser" class="bx bx-search"></i>
+              <input id="inser" type="text" placeholder="Search Product">
+            </div>
+            <div class="icon">
+                <i class="bx bx-notification"></i>
+            </div>
+          
+         </section>
+         <h4 class="ad">Update Products</h4>
+         <div class="card">
+            <section id="item1">
+               <h3>Description</h3>
+               <section class="des">
+                <label for="pid">Product Id</label>
+                <input type="text" id="pid" name="pid" readonly >
+                <label for="name">Product Name</label>
+                 <input type="text" id="pname" name="name" placeholder="Enter the product name">
+                 <label class="d" for="de">Desciption</label>
+                 <textarea  id="decrip"rows="10" placeholder="Enter details of products"></textarea>
+               </section>
+               <h3>Categories</h3>
+               <section class="category">
+                <label for="name">Product Categories</label>
+                <input type="text" id="upcat" name="name" placeholder="Enter the product category">
+                <label for="name">Product Categories</label>
+                <input type="text" id="upsubcat" name="name" placeholder="Enter the product sub-categories">
+               </section>
+               <h3>Inventory</h3>
+               <section class="Inventory">
+                    <label>Quantity</label>
+                    <input id="quntity" type="text" placeholder="Enter the quantity name">
+               </section>
+               
+            </section>
+            <section id="item2">
+                <h3>Product Images</h3>
+                <section id="pimg">
+                    <section class="P_image">
+                    
+                        <img id="imc" src="image/woman/i1.jpeg" class="icover" alt="">
+                       
+                      
+    
+                    </section>
+                    <div id="image-container"></div>
+
+                </section>
+                <h3>Pricing</h3>
+                <section class="price">
+
+                    <label>Product Price</label>
+                    <input type="text" placeholder="Enter the price name" id="price">
+                </section>
+                <h3>Size</h3>
+                <section class="size">
+                    <label>Product Size</label>
+                    <div class="s">
+                        <input type="checkbox" name="s" class="sizec" value="S">
+                        <label for="s" class="size1">S</label>
+                        <input name="m" type="checkbox" class="sizec" value="M">
+                        <label for="m" class="size1">M</label>
+                        <input name="l" type="checkbox" class="sizec" value="L">
+                        <label for="l"  class="size1">L</label>
+                        <input name="xl" type="checkbox" class="sizec" value="XL">
+                        <label for="xl" class="size1">XL</label>
+                        <input name="xll" type="checkbox" class="sizec" value="Xll">
+                        <label for="xll" class="size1">XXL</label>
+
+                    </div>
+                </section>
+                <h3>Colours</h3>
+                <section class="color">
+
+                    <label>Product Colours</label>
+                    <div class="clr">
+                         <input type="text" id="crlinput" name="pid" placeholder="Enter the product Colours" oninput="checkInput()">
+                         <button id="adclr" >Add</button>
+                    </div>
+                    <div id="discolor">
+                        
+                    </div>
+                   
+                </section>
+          
+              
+                <section class="buttons">
+
+                     <button id="p_add">Update Product</button>
+                     <button id="cancel">Cancel</button>
+                </section>
+
+
+                
+            </section>
+            
+         </div>
+     
+        
+            
+           
+     
+    </section>
+    
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <script src="src/admin.js"></script>
+    <script type="module" src="/src/update1.js"></script>
+
+  
+</body>
+</html>
